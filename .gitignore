@@ -1,0 +1,57 @@
+# ── Secretos. NUNCA subir ────────────────────────────────────
+.env
+*.key
+*.pem
+**/AdminApiKey*
+**/*apikey*
+**/*secret*
+**/*password*
+
+# ── Carpetas generadas por Unity (por si acaso) ──────────────
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# ── Solucion y archivos de IDE ───────────────────────────────
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.suo
+
+# ── Sistema operativo ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Assets de terceros o de pago ─────
+_Audio/
+_Fuentes/
+_Materials/
+_Models/
+_Packages/
+_Rereferences/
+_Resources/
+_Scenes/
+_Sprites/
+_Textures/
+_UI/
+_Videos/
+NuGet/
+Packages/
+ProBuilder Data/
+Settings/
+StreamingAssets/
+TextMesh Pro/
+TutorialInfo/
