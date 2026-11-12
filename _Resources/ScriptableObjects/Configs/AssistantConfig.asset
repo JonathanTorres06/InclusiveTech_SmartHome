@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6e5772c3b087f469554b1d336701aa, type: 3}
+  m_Name: AssistantConfig
+  m_EditorClassIdentifier: Assembly-CSharp::AssistantConfig
+  serverUrl: http://localhost:8000
+  requestTimeoutSeconds: 30
+  playFirstTimeTutorial: 1
+  wakeWordHost: 127.0.0.1
+  wakeWordPort: 9000
+  recordingDurationSeconds: 10
+  ttsVoice: 
+  audioVolume: 1
+  assistantName: Mia
+  playMorningGreeting: 1
+  loginSceneName: _LoginScene
+  houseSceneName: _InclusiveTech_House
+  AIAssistantPythonPath: I:\Documentos\Konrad Lorenz Universidad\10_Decimo Semestre\Proyecto
+    de Grado\INCLUSIVE_TECH\it_ai_assistant\venv\Scripts\python.exe
+  AIAssistantDirectory: I:\Documentos\Konrad Lorenz Universidad\10_Decimo Semestre\Proyecto
+    de Grado\INCLUSIVE_TECH\it_ai_assistant
+  wakeWordPythonPath: I:\Documentos\Konrad Lorenz Universidad\10_Decimo Semestre\Proyecto
+    de Grado\INCLUSIVE_TECH\it_wake_word\venv\Scripts\python.exe
+  wakeWordDirectory: I:\Documentos\Konrad Lorenz Universidad\10_Decimo Semestre\Proyecto
+    de Grado\INCLUSIVE_TECH\it_wake_word

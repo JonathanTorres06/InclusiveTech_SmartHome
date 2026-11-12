@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc03ed7c40c469d45a4bb20c508ee3b6, type: 3}
+  m_Name: ServicesConfig_Final
+  m_EditorClassIdentifier: Assembly-CSharp::ServicesConfig
+  services:
+  - serviceName: it_nav_system
+    enabled: 1
+    executablePath: ...\INCLUSIVE_TECH\it_nav_system\backend\venv\Scripts\python.exe
+    workingDirectory: ...\INCLUSIVE_TECH\it_nav_system\backend
+    arguments: -m app.main
+    healthCheck: 0
+    healthUrl: http://127.0.0.1:8001/health
+    tcpHost: 127.0.0.1
+    tcpPort: 0
+    processAliveSeconds: 3
+    startupTimeoutSeconds: 30
+  - serviceName: it_ai_assistant
+    enabled: 1
+    executablePath: ...\it_ai_assistant\venv\Scripts\python.exe
+    workingDirectory: ...\it_ai_assistant
+    arguments: main.py
+    healthCheck: 0
+    healthUrl: http://127.0.0.1:8000/
+    tcpHost: 127.0.0.1
+    tcpPort: 0
+    processAliveSeconds: 3
+    startupTimeoutSeconds: 90
+  - serviceName: it_wake_word
+    enabled: 1
+    executablePath: ...\it_wake_word\venv\Scripts\python.exe
+    workingDirectory: ...\it_wake_word
+    arguments: main.py
+    healthCheck: 1
+    healthUrl: 
+    tcpHost: 127.0.0.1
+    tcpPort: 9000
+    processAliveSeconds: 3
+    startupTimeoutSeconds: 45
